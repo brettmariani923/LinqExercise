@@ -88,7 +88,7 @@ namespace LinqExercise
             //TODO: Now print the Average of the employees' YearsOfExperience if their YOE is less than or equal to 10 AND Age is greater than 35.
 
             var avg = employees.Where(x => x.YearsOfExperience <= 10 && x.Age > 35);
-            Console.WriteLine(exp.Average(x => x.YearsOfExperience));
+            Console.WriteLine(avg.Average(x => x.YearsOfExperience));
 
 
             //TODO: Add an employee to the end of the list without using employees.Add()
@@ -103,7 +103,7 @@ namespace LinqExercise
 
             foreach (var x in employees)
             Console.WriteLine(x.FullName);
-            
+
             Console.WriteLine();
 
             Console.ReadLine();
